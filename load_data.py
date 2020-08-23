@@ -1,5 +1,6 @@
 from six.moves import urllib
-from sklearn.datasets import fetch_mldata
+from sklearn.datasets import fetch_openml
+dataset = fetch_openml("mnist_784")
 
 def load_mnist():
     mnist_path = "./mnist-original.mat"
